@@ -3,9 +3,9 @@ class P4{
 		int n = 121;
 		int num = n;
 		int rev = 0;	
-		while(n != 0){
+		while(num != 0){
 			int temp = num%10;
-			rev = rev*10+temp;
+			rev = rev*10 + temp;
 			num/=10;
 		}
 		if(n == rev){
