@@ -3,9 +3,8 @@ public class P5 {
         int n = 543;
         int sum = 0;
         while (n != 0) { 
-            int temp = n%10;
-            sum+=temp;
-            n/=10;
+            sum+=n%10;
+            n/=10; 
         }
         System.out.println(sum);
     }
