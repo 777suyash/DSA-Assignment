@@ -1,6 +1,6 @@
 class P1{
     public static void main(String[] args) {
-        int[] arr = {1,2,3,3,3,4,4};
+        int[] arr = {1,2,2,3,3,3,4,4};
         int max = arr[0];
         int max_fre = 0;
         int second = arr[0];
@@ -19,7 +19,7 @@ class P1{
                 max_fre = count;
                 max = arr[i];
             }
-            if (count < second_fre && max != count) {
+            if (count > second_fre && max_fre != count) {
                 second_fre = count;
                 second = arr[i];
             }
